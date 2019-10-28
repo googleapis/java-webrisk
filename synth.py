@@ -30,6 +30,7 @@ for version in versions:
         service=service,
         version=version,
         config_pattern=config_pattern,
+        package_pattern='com.google.webrisk.{version}',
         gapic=gapic,
     )
 
