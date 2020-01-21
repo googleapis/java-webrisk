@@ -1,5 +1,17 @@
 # Changelog
 
+### [0.31.2](https://www.github.com/googleapis/java-webrisk/compare/v0.31.1...v0.31.2) (2020-01-21)
+
+
+### Documentation
+
+* **regen:** fix javadoc return annotation ([#52](https://www.github.com/googleapis/java-webrisk/issues/52)) ([60db4a8](https://www.github.com/googleapis/java-webrisk/commit/60db4a83f3448ca5282624e410fd6b261282dd03))
+
+
+### Dependencies
+
+* update dependency org.threeten:threetenbp to v1.4.1 ([9d38227](https://www.github.com/googleapis/java-webrisk/commit/9d382278390dd6b34d29e93efc2b4df7c4d3e675))
+
 ### [0.31.1](https://www.github.com/googleapis/java-webrisk/compare/v0.31.0...v0.31.1) (2020-01-07)
 
 
