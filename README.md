@@ -43,17 +43,17 @@ If you are using Maven without BOM, add this to your dependencies:
 <dependency>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-webrisk</artifactId>
-  <version>0.31.1-alpha</version>
+  <version>0.32.0-alpha</version>
 </dependency>
 ```
 
 If you are using Gradle, add this to your dependencies
 ```Groovy
-compile 'com.google.cloud:google-cloud-webrisk:0.31.1-alpha'
+compile 'com.google.cloud:google-cloud-webrisk:0.32.0-alpha'
 ```
 If you are using SBT, add this to your dependencies
 ```Scala
-libraryDependencies += "com.google.cloud" % "google-cloud-webrisk" % "0.31.1-alpha"
+libraryDependencies += "com.google.cloud" % "google-cloud-webrisk" % "0.32.0-alpha"
 ```
 [//]: # ({x-version-update-end})
 
