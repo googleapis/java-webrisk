@@ -1,6 +1,12 @@
 {
-  "updateTime": "2020-04-02T01:28:43.759017Z",
   "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/java-webrisk.git",
+        "sha": "fa1e28bf7d1e7f2d5032a4b0e2890278a3496f90"
+      }
+    },
     {
       "git": {
         "name": "googleapis",
