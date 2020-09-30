@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-webrisk.git",
-        "sha": "f5b54b14cb8e9aed119a2d1c7b065902b52c5109"
+        "sha": "71a692339ceda1ad2b01dcf1964d42ee9aa9d5a2"
       }
     },
     {
@@ -27,7 +27,7 @@
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "916c10e8581804df2b48a0f0457d848f3faa582e"
+        "sha": "95dbe1bee3c7f7e52ddb24a54c37080620e0d1a2"
       }
     }
   ],
@@ -109,7 +109,6 @@
     "CODE_OF_CONDUCT.md",
     "CONTRIBUTING.md",
     "LICENSE",
-    "README.md",
     "codecov.yaml",
     "google-cloud-webrisk/src/main/java/com/google/cloud/webrisk/v1/WebRiskServiceClient.java",
     "google-cloud-webrisk/src/main/java/com/google/cloud/webrisk/v1/WebRiskServiceSettings.java",
