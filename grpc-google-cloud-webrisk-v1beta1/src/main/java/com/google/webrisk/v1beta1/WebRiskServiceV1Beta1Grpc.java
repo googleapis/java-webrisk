@@ -22,14 +22,7 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/**
- *
- *
- * <pre>
- * Web Risk v1beta1 API defines an interface to detect malicious URLs on your
- * website and in client applications.
- * </pre>
- */
+/** */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/webrisk/v1beta1/webrisk.proto")
@@ -223,23 +216,10 @@ public final class WebRiskServiceV1Beta1Grpc {
     return WebRiskServiceV1Beta1FutureStub.newStub(factory, channel);
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Web Risk v1beta1 API defines an interface to detect malicious URLs on your
-   * website and in client applications.
-   * </pre>
-   */
+  /** */
   public abstract static class WebRiskServiceV1Beta1ImplBase implements io.grpc.BindableService {
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the most recent threat list diffs.
-     * </pre>
-     */
+    /** */
     public void computeThreatListDiff(
         com.google.webrisk.v1beta1.ComputeThreatListDiffRequest request,
         io.grpc.stub.StreamObserver<com.google.webrisk.v1beta1.ComputeThreatListDiffResponse>
@@ -247,13 +227,7 @@ public final class WebRiskServiceV1Beta1Grpc {
       asyncUnimplementedUnaryCall(getComputeThreatListDiffMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * This method is used to check whether a URI is on a given threatList.
-     * </pre>
-     */
+    /** */
     public void searchUris(
         com.google.webrisk.v1beta1.SearchUrisRequest request,
         io.grpc.stub.StreamObserver<com.google.webrisk.v1beta1.SearchUrisResponse>
@@ -261,17 +235,7 @@ public final class WebRiskServiceV1Beta1Grpc {
       asyncUnimplementedUnaryCall(getSearchUrisMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the full hashes that match the requested hash prefix.
-     * This is used after a hash prefix is looked up in a threatList
-     * and there is a match. The client side threatList only holds partial hashes
-     * so the client must query this method to determine if there is a full
-     * hash match of a threat.
-     * </pre>
-     */
+    /** */
     public void searchHashes(
         com.google.webrisk.v1beta1.SearchHashesRequest request,
         io.grpc.stub.StreamObserver<com.google.webrisk.v1beta1.SearchHashesResponse>
@@ -306,14 +270,7 @@ public final class WebRiskServiceV1Beta1Grpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Web Risk v1beta1 API defines an interface to detect malicious URLs on your
-   * website and in client applications.
-   * </pre>
-   */
+  /** */
   public static final class WebRiskServiceV1Beta1Stub
       extends io.grpc.stub.AbstractAsyncStub<WebRiskServiceV1Beta1Stub> {
     private WebRiskServiceV1Beta1Stub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -326,13 +283,7 @@ public final class WebRiskServiceV1Beta1Grpc {
       return new WebRiskServiceV1Beta1Stub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the most recent threat list diffs.
-     * </pre>
-     */
+    /** */
     public void computeThreatListDiff(
         com.google.webrisk.v1beta1.ComputeThreatListDiffRequest request,
         io.grpc.stub.StreamObserver<com.google.webrisk.v1beta1.ComputeThreatListDiffResponse>
@@ -343,13 +294,7 @@ public final class WebRiskServiceV1Beta1Grpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * This method is used to check whether a URI is on a given threatList.
-     * </pre>
-     */
+    /** */
     public void searchUris(
         com.google.webrisk.v1beta1.SearchUrisRequest request,
         io.grpc.stub.StreamObserver<com.google.webrisk.v1beta1.SearchUrisResponse>
@@ -358,17 +303,7 @@ public final class WebRiskServiceV1Beta1Grpc {
           getChannel().newCall(getSearchUrisMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the full hashes that match the requested hash prefix.
-     * This is used after a hash prefix is looked up in a threatList
-     * and there is a match. The client side threatList only holds partial hashes
-     * so the client must query this method to determine if there is a full
-     * hash match of a threat.
-     * </pre>
-     */
+    /** */
     public void searchHashes(
         com.google.webrisk.v1beta1.SearchHashesRequest request,
         io.grpc.stub.StreamObserver<com.google.webrisk.v1beta1.SearchHashesResponse>
@@ -380,14 +315,7 @@ public final class WebRiskServiceV1Beta1Grpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Web Risk v1beta1 API defines an interface to detect malicious URLs on your
-   * website and in client applications.
-   * </pre>
-   */
+  /** */
   public static final class WebRiskServiceV1Beta1BlockingStub
       extends io.grpc.stub.AbstractBlockingStub<WebRiskServiceV1Beta1BlockingStub> {
     private WebRiskServiceV1Beta1BlockingStub(
@@ -401,56 +329,27 @@ public final class WebRiskServiceV1Beta1Grpc {
       return new WebRiskServiceV1Beta1BlockingStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the most recent threat list diffs.
-     * </pre>
-     */
+    /** */
     public com.google.webrisk.v1beta1.ComputeThreatListDiffResponse computeThreatListDiff(
         com.google.webrisk.v1beta1.ComputeThreatListDiffRequest request) {
       return blockingUnaryCall(
           getChannel(), getComputeThreatListDiffMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * This method is used to check whether a URI is on a given threatList.
-     * </pre>
-     */
+    /** */
     public com.google.webrisk.v1beta1.SearchUrisResponse searchUris(
         com.google.webrisk.v1beta1.SearchUrisRequest request) {
       return blockingUnaryCall(getChannel(), getSearchUrisMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the full hashes that match the requested hash prefix.
-     * This is used after a hash prefix is looked up in a threatList
-     * and there is a match. The client side threatList only holds partial hashes
-     * so the client must query this method to determine if there is a full
-     * hash match of a threat.
-     * </pre>
-     */
+    /** */
     public com.google.webrisk.v1beta1.SearchHashesResponse searchHashes(
         com.google.webrisk.v1beta1.SearchHashesRequest request) {
       return blockingUnaryCall(getChannel(), getSearchHashesMethod(), getCallOptions(), request);
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Web Risk v1beta1 API defines an interface to detect malicious URLs on your
-   * website and in client applications.
-   * </pre>
-   */
+  /** */
   public static final class WebRiskServiceV1Beta1FutureStub
       extends io.grpc.stub.AbstractFutureStub<WebRiskServiceV1Beta1FutureStub> {
     private WebRiskServiceV1Beta1FutureStub(
@@ -464,13 +363,7 @@ public final class WebRiskServiceV1Beta1Grpc {
       return new WebRiskServiceV1Beta1FutureStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the most recent threat list diffs.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.webrisk.v1beta1.ComputeThreatListDiffResponse>
         computeThreatListDiff(com.google.webrisk.v1beta1.ComputeThreatListDiffRequest request) {
@@ -478,13 +371,7 @@ public final class WebRiskServiceV1Beta1Grpc {
           getChannel().newCall(getComputeThreatListDiffMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * This method is used to check whether a URI is on a given threatList.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.webrisk.v1beta1.SearchUrisResponse>
         searchUris(com.google.webrisk.v1beta1.SearchUrisRequest request) {
@@ -492,17 +379,7 @@ public final class WebRiskServiceV1Beta1Grpc {
           getChannel().newCall(getSearchUrisMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the full hashes that match the requested hash prefix.
-     * This is used after a hash prefix is looked up in a threatList
-     * and there is a match. The client side threatList only holds partial hashes
-     * so the client must query this method to determine if there is a full
-     * hash match of a threat.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.webrisk.v1beta1.SearchHashesResponse>
         searchHashes(com.google.webrisk.v1beta1.SearchHashesRequest request) {
