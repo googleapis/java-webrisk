@@ -22,14 +22,7 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/**
- *
- *
- * <pre>
- * Web Risk API defines an interface to detect malicious URLs on your
- * website and in client applications.
- * </pre>
- */
+/** */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/webrisk/v1/webrisk.proto")
@@ -256,28 +249,10 @@ public final class WebRiskServiceGrpc {
     return WebRiskServiceFutureStub.newStub(factory, channel);
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Web Risk API defines an interface to detect malicious URLs on your
-   * website and in client applications.
-   * </pre>
-   */
+  /** */
   public abstract static class WebRiskServiceImplBase implements io.grpc.BindableService {
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the most recent threat list diffs. These diffs should be applied to
-     * a local database of hashes to keep it up-to-date. If the local database is
-     * empty or excessively out-of-date, a complete snapshot of the database will
-     * be returned. This Method only updates a single ThreatList at a time. To
-     * update multiple ThreatList databases, this method needs to be called once
-     * for each list.
-     * </pre>
-     */
+    /** */
     public void computeThreatListDiff(
         com.google.webrisk.v1.ComputeThreatListDiffRequest request,
         io.grpc.stub.StreamObserver<com.google.webrisk.v1.ComputeThreatListDiffResponse>
@@ -285,52 +260,21 @@ public final class WebRiskServiceGrpc {
       asyncUnimplementedUnaryCall(getComputeThreatListDiffMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * This method is used to check whether a URI is on a given threatList.
-     * Multiple threatLists may be searched in a single query.
-     * The response will list all requested threatLists the URI was found to
-     * match. If the URI is not found on any of the requested ThreatList an
-     * empty response will be returned.
-     * </pre>
-     */
+    /** */
     public void searchUris(
         com.google.webrisk.v1.SearchUrisRequest request,
         io.grpc.stub.StreamObserver<com.google.webrisk.v1.SearchUrisResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getSearchUrisMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the full hashes that match the requested hash prefix.
-     * This is used after a hash prefix is looked up in a threatList
-     * and there is a match. The client side threatList only holds partial hashes
-     * so the client must query this method to determine if there is a full
-     * hash match of a threat.
-     * </pre>
-     */
+    /** */
     public void searchHashes(
         com.google.webrisk.v1.SearchHashesRequest request,
         io.grpc.stub.StreamObserver<com.google.webrisk.v1.SearchHashesResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getSearchHashesMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a Submission of a URI suspected of containing phishing content to
-     * be reviewed. If the result verifies the existence of malicious phishing
-     * content, the site will be added to the [Google's Social Engineering
-     * lists](https://support.google.com/webmasters/answer/6350487/) in order to
-     * protect users that could get exposed to this threat in the future. Only
-     * projects with CREATE_SUBMISSION_USERS visibility can use this method.
-     * </pre>
-     */
+    /** */
     public void createSubmission(
         com.google.webrisk.v1.CreateSubmissionRequest request,
         io.grpc.stub.StreamObserver<com.google.webrisk.v1.Submission> responseObserver) {
@@ -369,14 +313,7 @@ public final class WebRiskServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Web Risk API defines an interface to detect malicious URLs on your
-   * website and in client applications.
-   * </pre>
-   */
+  /** */
   public static final class WebRiskServiceStub
       extends io.grpc.stub.AbstractAsyncStub<WebRiskServiceStub> {
     private WebRiskServiceStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -388,18 +325,7 @@ public final class WebRiskServiceGrpc {
       return new WebRiskServiceStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the most recent threat list diffs. These diffs should be applied to
-     * a local database of hashes to keep it up-to-date. If the local database is
-     * empty or excessively out-of-date, a complete snapshot of the database will
-     * be returned. This Method only updates a single ThreatList at a time. To
-     * update multiple ThreatList databases, this method needs to be called once
-     * for each list.
-     * </pre>
-     */
+    /** */
     public void computeThreatListDiff(
         com.google.webrisk.v1.ComputeThreatListDiffRequest request,
         io.grpc.stub.StreamObserver<com.google.webrisk.v1.ComputeThreatListDiffResponse>
@@ -410,17 +336,7 @@ public final class WebRiskServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * This method is used to check whether a URI is on a given threatList.
-     * Multiple threatLists may be searched in a single query.
-     * The response will list all requested threatLists the URI was found to
-     * match. If the URI is not found on any of the requested ThreatList an
-     * empty response will be returned.
-     * </pre>
-     */
+    /** */
     public void searchUris(
         com.google.webrisk.v1.SearchUrisRequest request,
         io.grpc.stub.StreamObserver<com.google.webrisk.v1.SearchUrisResponse> responseObserver) {
@@ -428,17 +344,7 @@ public final class WebRiskServiceGrpc {
           getChannel().newCall(getSearchUrisMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the full hashes that match the requested hash prefix.
-     * This is used after a hash prefix is looked up in a threatList
-     * and there is a match. The client side threatList only holds partial hashes
-     * so the client must query this method to determine if there is a full
-     * hash match of a threat.
-     * </pre>
-     */
+    /** */
     public void searchHashes(
         com.google.webrisk.v1.SearchHashesRequest request,
         io.grpc.stub.StreamObserver<com.google.webrisk.v1.SearchHashesResponse> responseObserver) {
@@ -448,18 +354,7 @@ public final class WebRiskServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a Submission of a URI suspected of containing phishing content to
-     * be reviewed. If the result verifies the existence of malicious phishing
-     * content, the site will be added to the [Google's Social Engineering
-     * lists](https://support.google.com/webmasters/answer/6350487/) in order to
-     * protect users that could get exposed to this threat in the future. Only
-     * projects with CREATE_SUBMISSION_USERS visibility can use this method.
-     * </pre>
-     */
+    /** */
     public void createSubmission(
         com.google.webrisk.v1.CreateSubmissionRequest request,
         io.grpc.stub.StreamObserver<com.google.webrisk.v1.Submission> responseObserver) {
@@ -470,14 +365,7 @@ public final class WebRiskServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Web Risk API defines an interface to detect malicious URLs on your
-   * website and in client applications.
-   * </pre>
-   */
+  /** */
   public static final class WebRiskServiceBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<WebRiskServiceBlockingStub> {
     private WebRiskServiceBlockingStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -490,68 +378,26 @@ public final class WebRiskServiceGrpc {
       return new WebRiskServiceBlockingStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the most recent threat list diffs. These diffs should be applied to
-     * a local database of hashes to keep it up-to-date. If the local database is
-     * empty or excessively out-of-date, a complete snapshot of the database will
-     * be returned. This Method only updates a single ThreatList at a time. To
-     * update multiple ThreatList databases, this method needs to be called once
-     * for each list.
-     * </pre>
-     */
+    /** */
     public com.google.webrisk.v1.ComputeThreatListDiffResponse computeThreatListDiff(
         com.google.webrisk.v1.ComputeThreatListDiffRequest request) {
       return blockingUnaryCall(
           getChannel(), getComputeThreatListDiffMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * This method is used to check whether a URI is on a given threatList.
-     * Multiple threatLists may be searched in a single query.
-     * The response will list all requested threatLists the URI was found to
-     * match. If the URI is not found on any of the requested ThreatList an
-     * empty response will be returned.
-     * </pre>
-     */
+    /** */
     public com.google.webrisk.v1.SearchUrisResponse searchUris(
         com.google.webrisk.v1.SearchUrisRequest request) {
       return blockingUnaryCall(getChannel(), getSearchUrisMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the full hashes that match the requested hash prefix.
-     * This is used after a hash prefix is looked up in a threatList
-     * and there is a match. The client side threatList only holds partial hashes
-     * so the client must query this method to determine if there is a full
-     * hash match of a threat.
-     * </pre>
-     */
+    /** */
     public com.google.webrisk.v1.SearchHashesResponse searchHashes(
         com.google.webrisk.v1.SearchHashesRequest request) {
       return blockingUnaryCall(getChannel(), getSearchHashesMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a Submission of a URI suspected of containing phishing content to
-     * be reviewed. If the result verifies the existence of malicious phishing
-     * content, the site will be added to the [Google's Social Engineering
-     * lists](https://support.google.com/webmasters/answer/6350487/) in order to
-     * protect users that could get exposed to this threat in the future. Only
-     * projects with CREATE_SUBMISSION_USERS visibility can use this method.
-     * </pre>
-     */
+    /** */
     public com.google.webrisk.v1.Submission createSubmission(
         com.google.webrisk.v1.CreateSubmissionRequest request) {
       return blockingUnaryCall(
@@ -559,14 +405,7 @@ public final class WebRiskServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Web Risk API defines an interface to detect malicious URLs on your
-   * website and in client applications.
-   * </pre>
-   */
+  /** */
   public static final class WebRiskServiceFutureStub
       extends io.grpc.stub.AbstractFutureStub<WebRiskServiceFutureStub> {
     private WebRiskServiceFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -579,18 +418,7 @@ public final class WebRiskServiceGrpc {
       return new WebRiskServiceFutureStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the most recent threat list diffs. These diffs should be applied to
-     * a local database of hashes to keep it up-to-date. If the local database is
-     * empty or excessively out-of-date, a complete snapshot of the database will
-     * be returned. This Method only updates a single ThreatList at a time. To
-     * update multiple ThreatList databases, this method needs to be called once
-     * for each list.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.webrisk.v1.ComputeThreatListDiffResponse>
         computeThreatListDiff(com.google.webrisk.v1.ComputeThreatListDiffRequest request) {
@@ -598,17 +426,7 @@ public final class WebRiskServiceGrpc {
           getChannel().newCall(getComputeThreatListDiffMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * This method is used to check whether a URI is on a given threatList.
-     * Multiple threatLists may be searched in a single query.
-     * The response will list all requested threatLists the URI was found to
-     * match. If the URI is not found on any of the requested ThreatList an
-     * empty response will be returned.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.webrisk.v1.SearchUrisResponse>
         searchUris(com.google.webrisk.v1.SearchUrisRequest request) {
@@ -616,17 +434,7 @@ public final class WebRiskServiceGrpc {
           getChannel().newCall(getSearchUrisMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets the full hashes that match the requested hash prefix.
-     * This is used after a hash prefix is looked up in a threatList
-     * and there is a match. The client side threatList only holds partial hashes
-     * so the client must query this method to determine if there is a full
-     * hash match of a threat.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.webrisk.v1.SearchHashesResponse>
         searchHashes(com.google.webrisk.v1.SearchHashesRequest request) {
@@ -634,18 +442,7 @@ public final class WebRiskServiceGrpc {
           getChannel().newCall(getSearchHashesMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a Submission of a URI suspected of containing phishing content to
-     * be reviewed. If the result verifies the existence of malicious phishing
-     * content, the site will be added to the [Google's Social Engineering
-     * lists](https://support.google.com/webmasters/answer/6350487/) in order to
-     * protect users that could get exposed to this threat in the future. Only
-     * projects with CREATE_SUBMISSION_USERS visibility can use this method.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.webrisk.v1.Submission>
         createSubmission(com.google.webrisk.v1.CreateSubmissionRequest request) {
       return futureUnaryCall(
