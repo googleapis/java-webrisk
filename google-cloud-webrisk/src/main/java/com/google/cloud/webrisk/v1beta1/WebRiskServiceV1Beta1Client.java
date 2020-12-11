@@ -149,8 +149,8 @@ public class WebRiskServiceV1Beta1Client implements BackgroundResource {
   /**
    * Gets the most recent threat list diffs.
    *
-   * @param threat_type The ThreatList to update.
-   * @param version_token The current version token of the client for the requested list (the client
+   * @param threatType The ThreatList to update.
+   * @param versionToken The current version token of the client for the requested list (the client
    *     version that was received from the last successful diff).
    * @param constraints Required. The constraints associated with this request.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -196,7 +196,7 @@ public class WebRiskServiceV1Beta1Client implements BackgroundResource {
    * This method is used to check whether a URI is on a given threatList.
    *
    * @param uri Required. The URI to be checked for matches.
-   * @param threat_types Required. The ThreatLists to search in.
+   * @param threatTypes Required. The ThreatLists to search in.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final SearchUrisResponse searchUris(String uri, List<ThreatType> threatTypes) {
@@ -233,9 +233,9 @@ public class WebRiskServiceV1Beta1Client implements BackgroundResource {
    * hashes so the client must query this method to determine if there is a full hash match of a
    * threat.
    *
-   * @param hash_prefix A hash prefix, consisting of the most significant 4-32 bytes of a SHA256
+   * @param hashPrefix A hash prefix, consisting of the most significant 4-32 bytes of a SHA256
    *     hash. For JSON requests, this field is base64-encoded.
-   * @param threat_types Required. The ThreatLists to search in.
+   * @param threatTypes Required. The ThreatLists to search in.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final SearchHashesResponse searchHashes(

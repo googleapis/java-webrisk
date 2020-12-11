@@ -100,11 +100,21 @@ public class GrpcWebRiskServiceV1Beta1Stub extends WebRiskServiceV1Beta1Stub {
         WebRiskServiceV1Beta1StubSettings.newBuilder().build(), clientContext, callableFactory);
   }
 
+  /**
+   * Constructs an instance of GrpcWebRiskServiceV1Beta1Stub, using the given settings. This is
+   * protected so that it is easy to make a subclass, but otherwise, the static factory methods
+   * should be preferred.
+   */
   protected GrpcWebRiskServiceV1Beta1Stub(
       WebRiskServiceV1Beta1StubSettings settings, ClientContext clientContext) throws IOException {
     this(settings, clientContext, new GrpcWebRiskServiceV1Beta1CallableFactory());
   }
 
+  /**
+   * Constructs an instance of GrpcWebRiskServiceV1Beta1Stub, using the given settings. This is
+   * protected so that it is easy to make a subclass, but otherwise, the static factory methods
+   * should be preferred.
+   */
   protected GrpcWebRiskServiceV1Beta1Stub(
       WebRiskServiceV1Beta1StubSettings settings,
       ClientContext clientContext,
