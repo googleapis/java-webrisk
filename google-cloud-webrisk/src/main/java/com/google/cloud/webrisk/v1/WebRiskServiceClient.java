@@ -34,7 +34,6 @@ import com.google.webrisk.v1.Submission;
 import com.google.webrisk.v1.ThreatType;
 import java.io.IOException;
 import java.util.List;
-import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.Generated;
 
@@ -318,7 +317,7 @@ public class WebRiskServiceClient implements BackgroundResource {
   public final Submission createSubmission(ProjectName parent, Submission submission) {
     CreateSubmissionRequest request =
         CreateSubmissionRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setSubmission(submission)
             .build();
     return createSubmission(request);
