@@ -153,9 +153,9 @@ public class WebRiskServiceClient implements BackgroundResource {
    * ThreatList at a time. To update multiple ThreatList databases, this method needs to be called
    * once for each list.
    *
-   * @param threat_type Required. The threat list to update. Only a single ThreatType should be
+   * @param threatType Required. The threat list to update. Only a single ThreatType should be
    *     specified.
-   * @param version_token The current version token of the client for the requested list (the client
+   * @param versionToken The current version token of the client for the requested list (the client
    *     version that was received from the last successful diff). If the client does not have a
    *     version token (this is the first time calling ComputeThreatListDiff), this may be left
    *     empty and a full database snapshot will be returned.
@@ -214,7 +214,7 @@ public class WebRiskServiceClient implements BackgroundResource {
    * will be returned.
    *
    * @param uri Required. The URI to be checked for matches.
-   * @param threat_types Required. The ThreatLists to search in. Multiple ThreatLists may be
+   * @param threatTypes Required. The ThreatLists to search in. Multiple ThreatLists may be
    *     specified.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -258,9 +258,9 @@ public class WebRiskServiceClient implements BackgroundResource {
    * hashes so the client must query this method to determine if there is a full hash match of a
    * threat.
    *
-   * @param hash_prefix A hash prefix, consisting of the most significant 4-32 bytes of a SHA256
+   * @param hashPrefix A hash prefix, consisting of the most significant 4-32 bytes of a SHA256
    *     hash. For JSON requests, this field is base64-encoded.
-   * @param threat_types Required. The ThreatLists to search in. Multiple ThreatLists may be
+   * @param threatTypes Required. The ThreatLists to search in. Multiple ThreatLists may be
    *     specified.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
