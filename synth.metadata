@@ -4,23 +4,23 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-webrisk.git",
-        "sha": "476b29f77596dae696280ca43fb873cd4c11af6b"
+        "sha": "0dd5e881792acd2b89e17d66fc11f65a17dad81f"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "f41a9f99b485bc09e95e0cfca979e2f419482336",
-        "internalRef": "317323517"
+        "sha": "b11a87f3b54be3a5e42c15020ee1e0781f86da90",
+        "internalRef": "344134135"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "f41a9f99b485bc09e95e0cfca979e2f419482336",
-        "internalRef": "317323517"
+        "sha": "b11a87f3b54be3a5e42c15020ee1e0781f86da90",
+        "internalRef": "344134135"
       }
     },
     {
