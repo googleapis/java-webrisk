@@ -50,5 +50,5 @@ public class SearchUriExample {
       return searchUrisResponse;
     }
   }
-  // [END webrisk_search-uri]
+  // [END webrisk_search_uri]
 }
