@@ -29,7 +29,8 @@ public class SearchUriExample {
     String uri = "http://testsafebrowsing.appspot.com/s/malware.html";
     SearchUrisResponse response = searchUriExample(uri);
   }
-
+  
+  // [START webrisk_search_uri]
   public static SearchUrisResponse searchUriExample(String uri) throws IOException {
     //create-webrisk-client
     try (WebRiskServiceClient webRiskServiceClient = WebRiskServiceClient.create()) {
@@ -49,4 +50,5 @@ public class SearchUriExample {
       return searchUrisResponse;
     }
   }
+  // [END webrisk_search-uri]
 }
