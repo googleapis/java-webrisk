@@ -29,6 +29,7 @@ public class SubmitUriExample {
     Submission response = submitUriExample(uri);
   }
 
+  // [START webrisk_submit_uri]
   public static Submission submitUriExample(String uri) throws IOException {
     //create-webrisk-client
     try (WebRiskServiceClient webRiskServiceClient = WebRiskServiceClient.create()) {
@@ -43,4 +44,5 @@ public class SubmitUriExample {
     }
 
   }
+  // [END webrisk_submit_uri]
 }
