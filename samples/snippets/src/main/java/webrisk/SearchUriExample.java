@@ -39,7 +39,7 @@ public class SearchUriExample {
           .setUri(uri).build();
       SearchUrisResponse searchUrisResponse = webRiskServiceClient.searchUris(searchUrisRequest);
       webRiskServiceClient.shutdownNow();
-      if(!searchUrisResponse.getThreat().getThreatTypesList().isEmpty()) {
+      if (!searchUrisResponse.getThreat().getThreatTypesList().isEmpty()) {
         System.out.println("The URL has the following threat : ");
         System.out.println(searchUrisResponse);
       } else {
