@@ -23,25 +23,24 @@ import java.io.IOException;
 
 public class SubmitUriExample {
 
-  public static void main(String[] args) {
-    Submission response = submitUriExample();
+  public static void submitUriExample() throws IOException {
+    //The URL to be submitted
+    String uri = "http://testsafebrowsing.appspot.com/s/malware.html";
+    Submission response = submitUriExample(uri);
   }
 
-  public static Submission submitUriExample() {
+  public static Submission submitUriExample(String uri) throws IOException {
     //create-webrisk-client
-    Submission submissionResponse = null;
-
     try (WebRiskServiceClient webRiskServiceClient = WebRiskServiceClient.create()) {
-      //Create submission with the URL to be submitted
       Submission submission = Submission.newBuilder()
-          .setUri("http://testsafebrowsing.appspot.com/s/malware.html").build();
+          .setUri(uri).build();
       CreateSubmissionRequest submissionRequest = CreateSubmissionRequest.newBuilder()
           .setParent("projects/your-project-id").setSubmission(submission).build();
-      submissionResponse = webRiskServiceClient.createSubmission(submissionRequest);
+      Submission submissionResponse = webRiskServiceClient.createSubmission(submissionRequest);
       webRiskServiceClient.shutdownNow();
-    } catch (IOException ioException) {
-      ioException.printStackTrace();
+      System.out.println("The submitted " + submissionResponse);
+      return submissionResponse;
     }
-    return submissionResponse;
+
   }
 }

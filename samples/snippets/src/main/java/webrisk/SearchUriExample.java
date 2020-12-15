@@ -24,25 +24,29 @@ import java.io.IOException;
 
 public class SearchUriExample {
 
-  public static void main(String[] args) {
+  public static void searchUriExample() throws IOException {
     //The URL to be searched
     String uri = "http://testsafebrowsing.appspot.com/s/malware.html";
     SearchUrisResponse response = searchUriExample(uri);
   }
 
-  public static SearchUrisResponse searchUriExample(String uri) {
-    SearchUrisRequest searchUrisRequest;
-    SearchUrisResponse searchUrisResponse = null;
-
+  public static SearchUrisResponse searchUriExample(String uri) throws IOException {
+    //create-webrisk-client
     try (WebRiskServiceClient webRiskServiceClient = WebRiskServiceClient.create()) {
       //Query the url for a specific threat type
-      searchUrisRequest = SearchUrisRequest.newBuilder().addThreatTypes(ThreatType.MALWARE)
+      SearchUrisRequest searchUrisRequest = SearchUrisRequest.newBuilder()
+          .addThreatTypes(ThreatType.MALWARE)
           .setUri(uri).build();
-      searchUrisResponse = webRiskServiceClient.searchUris(searchUrisRequest);
+      SearchUrisResponse searchUrisResponse = webRiskServiceClient.searchUris(searchUrisRequest);
       webRiskServiceClient.shutdownNow();
-    } catch (IOException ioException) {
-      ioException.printStackTrace();
+      if(!searchUrisResponse.getThreat().getThreatTypesList().isEmpty()) {
+        System.out.println("The URL has the following threat : ");
+        System.out.println(searchUrisResponse);
+      } else {
+        System.out.println("The URL is safe!");
+      }
+
+      return searchUrisResponse;
     }
-    return searchUrisResponse;
   }
 }

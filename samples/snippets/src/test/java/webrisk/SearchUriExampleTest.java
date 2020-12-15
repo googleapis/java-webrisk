@@ -19,6 +19,7 @@ package webrisk;
 import com.google.common.truth.Truth;
 import com.google.webrisk.v1.SearchUrisResponse;
 import com.google.webrisk.v1.ThreatType;
+import java.io.IOException;
 import java.util.List;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,15 +27,21 @@ import org.junit.runners.JUnit4;
 
 @RunWith(JUnit4.class)
 public class SearchUriExampleTest {
-
-  //The URL to be searched
-  protected static String uri = "http://testsafebrowsing.appspot.com/s/malware.html";
-
   @Test
-  public void testSearch() {
-
+  public void testSearchWithThreat() throws IOException {
+    //The URL to be searched
+    String uri = "http://testsafebrowsing.appspot.com/s/malware.html";
     SearchUrisResponse actualResponse = SearchUriExample.searchUriExample(uri);
     List<ThreatType> type = actualResponse.getThreat().getThreatTypesList();
     Truth.assertThat(type).contains(ThreatType.MALWARE);
+  }
+
+  @Test
+  public void testSearchWithoutThreat() throws IOException {
+    //The URL to be searched
+    String uri = "http://testsafebrowsing.appspot.com/malware.html";
+    SearchUrisResponse actualResponse = SearchUriExample.searchUriExample(uri);
+    List<ThreatType> type = actualResponse.getThreat().getThreatTypesList();
+    Truth.assertThat(type).isEmpty();
   }
 }

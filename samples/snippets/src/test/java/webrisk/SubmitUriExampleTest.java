@@ -19,13 +19,14 @@ package webrisk;
 
 import com.google.common.truth.Truth;
 import com.google.webrisk.v1.Submission;
+import java.io.IOException;
 import org.junit.Test;
 
 public class SubmitUriExampleTest {
-
   @Test
-  public void testSumbitUriExample() {
-    Submission actualSubmission = SubmitUriExample.submitUriExample();
-    Truth.assertThat(actualSubmission.getUri()).isEqualTo("http://testsafebrowsing.appspot.com/s/malware.html");
+  public void testSumbitUriExample() throws IOException {
+    String testUri = "http://testsafebrowsing.appspot.com/s/malware.html";
+    Submission actualSubmission = SubmitUriExample.submitUriExample(testUri);
+    Truth.assertThat(actualSubmission.getUri()).isEqualTo(testUri);
   }
 }
