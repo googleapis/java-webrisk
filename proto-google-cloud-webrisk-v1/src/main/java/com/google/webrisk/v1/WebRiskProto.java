@@ -105,8 +105,7 @@ public final class WebRiskProto {
   static {
     java.lang.String[] descriptorData = {
       "\n"
-          + "%google/cloud/webrisk/v1/webrisk.proto\022"
-          + "\027google.cloud.webrisk.v1\032\034google/api/annotations.proto\032\027google/api/client.proto\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\032\037google/protobuf/timestamp.proto\"\343\002\n"
+          + "%google/cloud/webrisk/v1/webrisk.proto\022\027google.cloud.webrisk.v1\032\034google/api/annotations.proto\032\027google/api/client.proto\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\032\037google/protobuf/timestamp.proto\"\343\002\n"
           + "\034ComputeThreatListDiffRequest\022=\n"
           + "\013threat_type\030\001"
           + " \001(\0162#.google.cloud.webrisk.v1.ThreatTypeB\003\340A\002\022\025\n\r"
