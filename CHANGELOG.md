@@ -1,5 +1,19 @@
 # Changelog
 
+### [2.0.13](https://github.com/googleapis/java-webrisk/compare/v2.0.12...v2.0.13) (2022-03-29)
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v2.9.0 ([#640](https://github.com/googleapis/java-webrisk/issues/640)) ([ba75611](https://github.com/googleapis/java-webrisk/commit/ba75611fb5d3efe5c3394f2c5dc647cb5f57d73b))
+
+### [2.0.12](https://github.com/googleapis/java-webrisk/compare/v2.0.11...v2.0.12) (2022-03-22)
+
+
+### Dependencies
+
+* update actions/checkout action to v3 ([#626](https://github.com/googleapis/java-webrisk/issues/626)) ([29c3707](https://github.com/googleapis/java-webrisk/commit/29c3707e7af63e6f946a80fbb6d8ebb29b4e96e3))
+
 ### [2.0.11](https://github.com/googleapis/java-webrisk/compare/v2.0.10...v2.0.11) (2022-03-02)
 
 
