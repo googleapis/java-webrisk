@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.6](https://github.com/googleapis/java-webrisk/compare/v2.2.5...v2.2.6) (2022-10-05)
+
+
+### Bug Fixes
+
+* update protobuf to v3.21.7 ([2d05be7](https://github.com/googleapis/java-webrisk/commit/2d05be766702baa05fd46f27ea2e1554bc39c2fd))
+
 ## [2.2.5](https://github.com/googleapis/java-webrisk/compare/v2.2.4...v2.2.5) (2022-10-03)
 
 
