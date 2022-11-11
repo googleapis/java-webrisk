@@ -18,30 +18,8 @@ The Maven artifact coordinates (`com.google.cloud:google-cloud-webrisk`) remain 
 
 ## Quickstart
 
-If you are using Maven with [BOM][libraries-bom], add this to your pom.xml file:
 
-```xml
-<dependencyManagement>
-  <dependencies>
-    <dependency>
-      <groupId>com.google.cloud</groupId>
-      <artifactId>libraries-bom</artifactId>
-      <version>26.1.4</version>
-      <type>pom</type>
-      <scope>import</scope>
-    </dependency>
-  </dependencies>
-</dependencyManagement>
-
-<dependencies>
-  <dependency>
-    <groupId>com.google.cloud</groupId>
-    <artifactId>google-cloud-webrisk</artifactId>
-  </dependency>
-
-```
-
-If you are using Maven without BOM, add this to your dependencies:
+If you are using Maven, add this to your pom.xml file:
 
 
 ```xml
@@ -53,13 +31,6 @@ If you are using Maven without BOM, add this to your dependencies:
 
 ```
 
-If you are using Gradle 5.x or later, add this to your dependencies:
-
-```Groovy
-implementation platform('com.google.cloud:libraries-bom:26.1.4')
-
-implementation 'com.google.cloud:google-cloud-webrisk'
-```
 If you are using Gradle without BOM, add this to your dependencies:
 
 ```Groovy
@@ -105,16 +76,6 @@ use this Web Risk Client Library.
 
 
 
-
-
-## Samples
-
-Samples are in the [`samples/`](https://github.com/googleapis/java-webrisk/tree/main/samples) directory.
-
-| Sample                      | Source Code                       | Try it |
-| --------------------------- | --------------------------------- | ------ |
-| Search Uri Example | [source code](https://github.com/googleapis/java-webrisk/blob/main/samples/snippets/src/main/java/webrisk/SearchUriExample.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/java-webrisk&page=editor&open_in_editor=samples/snippets/src/main/java/webrisk/SearchUriExample.java) |
-| Submit Uri Example | [source code](https://github.com/googleapis/java-webrisk/blob/main/samples/snippets/src/main/java/webrisk/SubmitUriExample.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/java-webrisk&page=editor&open_in_editor=samples/snippets/src/main/java/webrisk/SubmitUriExample.java) |
 
 
 
