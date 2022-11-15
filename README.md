@@ -34,7 +34,6 @@ If you are using Maven with [BOM][libraries-bom], add this to your pom.xml file:
 </dependencyManagement>
 
 <dependencies>
-  <!-- TODO: switch to libraries-bom after this artifact is included -->
   <dependency>
     <groupId>com.google.cloud</groupId>
     <artifactId>google-cloud-webrisk</artifactId>
