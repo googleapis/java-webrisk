@@ -107,16 +107,6 @@ use this Web Risk Client Library.
 
 
 
-## Samples
-
-Samples are in the [`samples/`](https://github.com/googleapis/java-webrisk/tree/main/samples) directory.
-
-| Sample                      | Source Code                       | Try it |
-| --------------------------- | --------------------------------- | ------ |
-| Search Uri Example | [source code](https://github.com/googleapis/java-webrisk/blob/main/samples/snippets/src/main/java/webrisk/SearchUriExample.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/java-webrisk&page=editor&open_in_editor=samples/snippets/src/main/java/webrisk/SearchUriExample.java) |
-| Submit Uri Example | [source code](https://github.com/googleapis/java-webrisk/blob/main/samples/snippets/src/main/java/webrisk/SubmitUriExample.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/java-webrisk&page=editor&open_in_editor=samples/snippets/src/main/java/webrisk/SubmitUriExample.java) |
-
-
 
 ## Troubleshooting
 
